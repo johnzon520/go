@@ -3112,7 +3112,7 @@ async function _0x1325bb(_0x36df = 0) {
   }
 }
 async function _0x1a0bdc() {
-  let _0x3164a8 = false;
+  let _0x3164a8 = true;
   try {
     let _0x3d36f5 = {
         fn: "auth",
