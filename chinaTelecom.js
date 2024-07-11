@@ -1725,7 +1725,7 @@ class _0x3f433d extends _0x280825 {
   }
 })().catch(_0x3fccb3 => _0x49dfef.log(_0x3fccb3)).finally(() => _0x49dfef.exitNow());
 async function _0x1a2249(_0x5dcebe = 0) {
-  let _0x40b7b = false;
+  let _0x40b7b = true;
   try {
     let _0x29d1da = {
         fn: "auth",
