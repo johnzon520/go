@@ -4517,7 +4517,7 @@ class _0x44d89a extends _0x21124e {
   }
 })().catch(_0x7671f5 => _0x18d7a9.log(_0x7671f5)).finally(() => _0x18d7a9.exitNow());
 async function _0xe1ac9c() {
-  let _0x2e822f = false;
+  let _0x2e822f = true;
   try {
     let _0x1c119c = {
         fn: "auth",
@@ -4554,7 +4554,7 @@ async function _0xe1ac9c() {
   }
 }
 async function _0x5b1f1e() {
-  let _0x2b11da = false;
+  let _0x2b11da = true;
   try {
     let _0x3092aa = {
         fn: "auth",
