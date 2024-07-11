@@ -584,7 +584,7 @@ function _0x462bc1() {
   }
 })().catch(_0x2cd514 => _0x454ec0.log(_0x2cd514)).finally(() => _0x454ec0.exitNow());
 async function _0x1976a1(_0x4d12f6 = 0) {
-  let _0x129863 = false;
+  let _0x129863 = true;
   try {
     let _0x3cb372 = {
         fn: "auth",
