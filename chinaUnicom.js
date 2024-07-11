@@ -4042,7 +4042,7 @@ async function _0x342cb7(_0x1f9ad3 = 0) {
   }
 }
 async function _0xdfa6ec() {
-  let _0x5ad89b = false;
+  let _0x5ad89b = true;
   try {
     let _0x1c4303 = {
         fn: "getTaskUrl",
