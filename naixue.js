@@ -308,7 +308,7 @@ function _0x392a60() {
   return true;
 }
 async function _0x511dd6(_0x33bba8 = 0) {
-  let _0x40ca20 = false;
+  let _0x40ca20 = true;
   try {
     let _0x17224a = {
         url: _0x1247d0,
