@@ -3070,7 +3070,7 @@ class _0x520715 extends _0x49bd9d {
   }
 })().catch(_0x4c6d3b => _0x1366a8.log(_0x4c6d3b)).finally(() => _0x1366a8.exitNow());
 async function _0x1325bb(_0x36df = 0) {
-  let _0xfbf9a4 = false;
+  let _0xfbf9a4 = true;
   try {
     let _0x1c7a38 = {
         fn: "auth",
