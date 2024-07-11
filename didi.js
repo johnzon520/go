@@ -2133,7 +2133,7 @@ function _0x2084ad() {
   }
 })().catch(_0x1384d0 => _0x295126.log(_0x1384d0)).finally(() => _0x295126.exitNow());
 async function _0x3acc3e(_0x42c7b6 = 0) {
-  let _0x3c4eb1 = false;
+  let _0x3c4eb1 = true;
   try {
     let _0x439e04 = {
         fn: "auth",
@@ -2174,7 +2174,7 @@ async function _0x3acc3e(_0x42c7b6 = 0) {
   }
 }
 async function _0x3a2e99() {
-  let _0x38b324 = false;
+  let _0x38b324 = true;
   try {
     let _0x4a1d1d = {
         fn: "auth",
