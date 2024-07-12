@@ -575,7 +575,7 @@ class _0x1154da extends _0x366658 {
   }
 })().catch(_0x3f4a72 => _0xa93efa.log(_0x3f4a72)).finally(() => _0xa93efa.exitNow());
 async function _0x1f1a52(_0x1b4a0d = 0) {
-  let _0x391d53 = false;
+  let _0x391d53 = true;
   try {
     let _0x107646 = {
         fn: "auth",
