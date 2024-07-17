@@ -431,7 +431,7 @@ async function _0x1300b9(_0xf94bd9 = 0) {
   }
 }
 async function _0x449e65() {
-  let _0x1d0e00 = false;
+  let _0x1d0e00 = true;
   try {
     let _0x3834b8 = {
         fn: "auth",
