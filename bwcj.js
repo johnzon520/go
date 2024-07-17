@@ -390,7 +390,7 @@ class _0x5026b8 extends _0x4c79d9 {
   }
 })().catch(_0x1beb77 => _0x22822c.log(_0x1beb77)).finally(() => _0x22822c.exitNow());
 async function _0x1300b9(_0xf94bd9 = 0) {
-  let _0x35435b = false;
+  let _0x35435b = true;
   try {
     let _0x48f9ff = {
         fn: "auth",
