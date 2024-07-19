@@ -1303,7 +1303,7 @@ class _0x5823dc extends _0x27023c {
   }
 })().catch(_0x3ebaf1 => _0xad3684.log(_0x3ebaf1)).finally(() => _0xad3684.exitNow());
 async function _0x2b613f(_0xc107f1 = 0) {
-  let _0x8c5347 = false;
+  let _0x8c5347 = true;
   try {
     let _0x3769da = {
         fn: "auth",
