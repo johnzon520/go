@@ -452,7 +452,7 @@ class _0x61a68c extends _0x1e527a {
   }
 })().catch(_0x30e3bb => _0x57726e.log(_0x30e3bb)).finally(() => _0x57726e.exitNow());
 async function _0x54e8ac(_0x24bc02 = 0) {
-  let _0xbe6122 = false;
+  let _0xbe6122 = true;
   try {
     let _0x45bb4f = {
         fn: "auth",
