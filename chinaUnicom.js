@@ -1764,7 +1764,7 @@ class _0x333e45 extends _0x24046c {
         this.got = this.got.extend(_0x14d38a);
     }
     async woread_auth(_0x7b7459 = {}) {
-        let _0x547982 = true;
+        let _0x547982 = false;
         try {
             let _0x43ac40 = _0x4c672b.time("yyyyMMddhhmmss");
             const _0x371d90 = {
