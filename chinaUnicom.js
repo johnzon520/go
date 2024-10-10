@@ -1824,7 +1824,7 @@ class _0x333e45 extends _0x24046c {
             } = await this.request(_0x4f9d64);
             let _0x5e778d = _0x4c672b.get(_0x28bf76, "code", -1);
             if (_0x5e778d == "0000") {
-                _0x5c0c95 = true;
+                _0x5c0c95 = false;
                 let {
                     userid: _0x58fe9a,
                     userindex: _0x42fa05,
