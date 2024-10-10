@@ -1764,7 +1764,7 @@ class _0x333e45 extends _0x24046c {
         this.got = this.got.extend(_0x14d38a);
     }
     async woread_auth(_0x7b7459 = {}) {
-        let _0x547982 = false;
+        let _0x547982 = true;
         try {
             let _0x43ac40 = _0x4c672b.time("yyyyMMddhhmmss");
             const _0x371d90 = {
@@ -1824,7 +1824,7 @@ class _0x333e45 extends _0x24046c {
             } = await this.request(_0x4f9d64);
             let _0x5e778d = _0x4c672b.get(_0x28bf76, "code", -1);
             if (_0x5e778d == "0000") {
-                _0x5c0c95 = false;
+                _0x5c0c95 = true;
                 let {
                     userid: _0x58fe9a,
                     userindex: _0x42fa05,
