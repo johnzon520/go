@@ -4172,7 +4172,7 @@ class _0x333e45 extends _0x24046c {
             await this.ltzf_task();
         }
         await this.flmf_task();
-        await this.woread_task();
+        /*await this.woread_task();*/
     }
     async userTestTask() {
         _0x4c672b.log("\n------------------ 账号[" + this.index + "] ------------------");
