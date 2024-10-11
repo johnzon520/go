@@ -1779,7 +1779,7 @@ class _0x333e45 extends _0x24046c {
             const _0x51135a = {
                 fn: "woread_auth",
                 method: "post",
-                url: "https://10010.woread.com.cn/ng_woread_service/rest/app/auth/" + _0x3d9810 + "/" + _0x281e8f + "/" + _0x2c469e,
+                //url: "https://10010.woread.com.cn/ng_woread_service/rest/app/auth/" + _0x3d9810 + "/" + _0x281e8f + "/" + _0x2c469e,
                 json: _0x40e0b0
             };
             let _0x380868 = _0x51135a;
@@ -1815,7 +1815,7 @@ class _0x333e45 extends _0x24046c {
             const _0x35c631 = {
                 fn: "woread_login",
                 method: "post",
-                url: "https://10010.woread.com.cn/ng_woread_service/rest/account/login",
+                //url: "https://10010.woread.com.cn/ng_woread_service/rest/account/login",
                 json: _0x148f49
             };
             let _0x4f9d64 = _0x35c631;
@@ -1858,7 +1858,7 @@ class _0x333e45 extends _0x24046c {
             const _0x131d89 = {
                 fn: "woread_auth",
                 method: "get",
-                url: "https:///m.woread.com.cn/api/union/app/auth/" + _0x4872bf + "/" + _0x45205b + "/" + _0x2cc763
+                //url: "https:///m.woread.com.cn/api/union/app/auth/" + _0x4872bf + "/" + _0x45205b + "/" + _0x2cc763
             };
             let _0x33aba2 = _0x131d89;
             let {
@@ -1883,7 +1883,6 @@ class _0x333e45 extends _0x24046c {
         let _0x1dc636 = false;
         try {
             let _0x55a5ea = {
-                userAccount: this.mobile,
                 userid: this.woread_userid,
                 token: this.woread_token,
                 timestamp: Date.now()
@@ -1900,7 +1899,7 @@ class _0x333e45 extends _0x24046c {
             const _0x662e4e = {
                 fn: "woread_login",
                 method: "post",
-                url: "https://m.woread.com.cn/api/union/user/thirdPartyFreeLogin",
+                //url: "https://m.woread.com.cn/api/union/user/thirdPartyFreeLogin",
                 json: _0x87c20b
             };
             let _0x445ffa = _0x662e4e;
