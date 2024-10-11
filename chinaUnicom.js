@@ -1828,6 +1828,7 @@ class _0x333e45 extends _0x24046c {
                 let {
                     userid: _0x58fe9a,
                     userindex: _0x42fa05,
+                    userAccount: _0x58fe9b,
                     token: _0x346b8f,
                     verifycode: _0xdef795
                 } = _0x28bf76?.data;
@@ -1836,6 +1837,7 @@ class _0x333e45 extends _0x24046c {
                 const _0x3bda74 = {
                     woread_userid: _0x58fe9a,
                     woread_userindex: _0x42fa05,
+                    mobile:_0x58fe9b,
                     woread_token: _0x346b8f,
                     woread_verifycode: _0xdef795
                 };
