@@ -1746,7 +1746,7 @@ class _0x333e45 extends _0x24046c {
             console.log(_0x229114);
         }
     }
-    async woread_api(_0x34880c) {
+   /* async woread_api(_0x34880c) {
         let _0x1db761 = await this.request(_0x4c672b.copy(_0x34880c));
         let _0x3e48ad = _0x1db761?.result?.message || "";
         if (_0x3e48ad?.includes("登录已过期") && (await this.woread_auth()) && (await this.woread_login())) {
@@ -1918,7 +1918,7 @@ class _0x333e45 extends _0x24046c {
         } finally {
             return _0x1dc636;
         }
-    }
+    }*/
     async woread_getSeeVideoAddNumber(_0x12ab92, _0x486335 = {}) {
         try {
             let _0x3140d3 = {
