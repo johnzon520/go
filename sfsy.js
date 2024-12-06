@@ -871,7 +871,7 @@ class _0x520715 extends _0x49bd9d {
       console.log(_0x4f0779);
     }
   }
-  async superWelfare_receiveRedPacket(_0x135d8d = {}) {
+  /*async superWelfare_receiveRedPacket(_0x135d8d = {}) {
     try {
       const _0x2adba0 = {
         channel: _0x1f992f
@@ -905,7 +905,7 @@ class _0x520715 extends _0x49bd9d {
     } catch (_0x3b26c1) {
       console.log(_0x3b26c1);
     }
-  }
+  }*/
   async memberDay_invite(_0x2ebad7 = {}) {
     try {
       let _0x3bca57 = _0x1366a8.randomList(_0x11aa2a.filter(_0x2ec76f => _0x2ec76f != this.userId));
