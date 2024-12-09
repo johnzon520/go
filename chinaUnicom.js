@@ -1779,7 +1779,7 @@ class _0x333e45 extends _0x24046c {
             const _0x51135a = {
                 fn: "woread_auth",
                 method: "post",
-                //url: "https://10010.woread.com.cn/ng_woread_service/rest/app/auth/" + _0x3d9810 + "/" + _0x281e8f + "/" + _0x2c469e,
+                url: "https://10010.woread.com.cn/ng_woread_service/rest/app/auth/" + _0x3d9810 + "/" + _0x281e8f + "/" + _0x2c469e,
                 json: _0x40e0b0
             };
             let _0x380868 = _0x51135a;
@@ -1815,7 +1815,7 @@ class _0x333e45 extends _0x24046c {
             const _0x35c631 = {
                 fn: "woread_login",
                 method: "post",
-                //url: "https://10010.woread.com.cn/ng_woread_service/rest/account/login",
+                url: "https://10010.woread.com.cn/ng_woread_service/rest/account/login",
                 json: _0x148f49
             };
             let _0x4f9d64 = _0x35c631;
@@ -4151,12 +4151,12 @@ class _0x333e45 extends _0x24046c {
         }
         if (!(await this.woread_m_login())) {
             return;
-        }*/
+        }
         this.switch_woread_token(this.woread_accesstoken);
         if (!_0x55391c) {
             await this.moonbox_queryActiveInfo();
         }
-        await this.moonbox_queryCurTaskStatus();
+        await this.moonbox_queryCurTaskStatus();*/
     }
     async userTask() {
         _0x4c672b.log("\n------------------ 账号[" + this.index + "] ------------------");
