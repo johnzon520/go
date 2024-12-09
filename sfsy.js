@@ -3041,7 +3041,7 @@ class _0x520715 extends _0x49bd9d {
     if (!(await this.refresh_cookie())) {
       return;
     }
-    await this.superWelfare_receiveRedPacket();
+    //await this.superWelfare_receiveRedPacket();
     await this.automaticSignFetchPackage();
     if (_0x94f81d == "true") {
       await this.bee_indexData();
