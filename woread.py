@@ -9,7 +9,7 @@ import binascii
 import base64
 import threading
 UA = "Mozilla/5.0 (Linux; Android 11; Redmi Note 10 Pro Build/RP1A.201005.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.159 Mobile Safari/537.36"
-PHONE_V = "17588888880@15288888888"
+PHONE_V = "16620805356"
 TASK_IDS = [121, 122,123,124, 125] 
 infocode = {
     "121":"阅读15分钟任务",
