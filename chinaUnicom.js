@@ -4140,6 +4140,7 @@ class _0x333e45 extends _0x24046c {
         if (!(await this.onLine())) {
             return;
         }
+        //关闭失效任务
         /*if (!(await this.woread_auth())) {
             return;
         }
