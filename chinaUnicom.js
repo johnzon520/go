@@ -4140,7 +4140,7 @@ class _0x333e45 extends _0x24046c {
         if (!(await this.onLine())) {
             return;
         }
-        if (!(await this.woread_auth())) {
+        /*if (!(await this.woread_auth())) {
             return;
         }
         if (!(await this.woread_login())) {
@@ -4151,7 +4151,7 @@ class _0x333e45 extends _0x24046c {
         }
         if (!(await this.woread_m_login())) {
             return;
-        }
+        }*/
         this.switch_woread_token(this.woread_accesstoken);
         if (!_0x55391c) {
             await this.moonbox_queryActiveInfo();
@@ -4172,7 +4172,7 @@ class _0x333e45 extends _0x24046c {
             await this.ltzf_task();
         }
         await this.flmf_task();
-        /*await this.woread_task();*/
+        //await this.woread_task();
     }
     async userTestTask() {
         _0x4c672b.log("\n------------------ 账号[" + this.index + "] ------------------");
