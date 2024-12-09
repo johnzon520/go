@@ -879,7 +879,7 @@ class _0x520715 extends _0x49bd9d {
       let _0xb87586 = {
           fn: "superWelfare_receiveRedPacket",
           method: "post",
-         // url: "https://mcs-mimp-web.sf-express.com/mcs-mimp/commonPost/~memberActLengthy~redPacketActivityService~superWelfare~receiveRedPacket",
+          url: "https://mcs-mimp-web.sf-express.com/mcs-mimp/commonPost/~memberActLengthy~redPacketActivityService~superWelfare~receiveRedPacket",
           headers: {
             ...this.getSign()
           },
