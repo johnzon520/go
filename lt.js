@@ -16,7 +16,7 @@ https://m.client.10010.com/mobileService/onLine.htm
 export chinaUnicomCookie="a3e4c1ff25da2xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 cron: 0 0,7,20 * * *
-const $ = new Env("中国联通");
+const $ = new Env("ChinaUnicom");
 */
 function _0x2abc(_0x2dbfcb, _0x396f1d) {
   const _0xab101c = _0x1e63();
