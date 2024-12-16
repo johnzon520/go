@@ -7,10 +7,12 @@ cron: 0 5 * * *
 """
 #import notify
 import requests, json, re, os, sys, time, random, datetime, urllib3, certifi, logging
+"""
 response = requests.get("https://mkjt.jdmk.xyz/mkjt.txt")
 response.encoding = 'utf-8'
 txt = response.text
 print(txt)
+"""
 logging.basicConfig(format='%(message)s',level=logging.DEBUG)
 logging.getLogger().setLevel(logging.ERROR)
 logging.getLogger().setLevel(logging.INFO)
@@ -258,10 +260,10 @@ def main():
 
     ck_run = ck.split('\n')
     print(f"{' ' * 10}꧁༺ {name} ༻꧂\n")
-    '''for i in ck_run:
+    for i in ck_run:
         three = i.split('#', 2)[2]
         helpid.append(three)
-    print(f'\n------------ 🍺执 行  助 力🍺 ------------\n☁️静默助力')
+    '''print(f'\n------------ 🍺执 行  助 力🍺 ------------\n☁️静默助力')
     for i, ck_run_n in enumerate(ck_run):
         try:
             id,two,three = ck_run_n.split('#',2)
@@ -273,26 +275,18 @@ def main():
     for i, ck_run_n in enumerate(ck_run):
         print(f'\n----------- 🍺账号【{i + 1}/{len(ck_run)}】执行🍺 -----------')
         try:
-            '''
             id,two,three = ck_run_n.split('#',2)
             id = id[:3] + "***" + id[-3:]
             print(f"📱：{id}")
             run(id,two)
             time.sleep(1)
             coupon(id,two)
-            '''
-            parts = ck_run_n.split('#')
-            id = parts[0]
-            id = id[:3] + "***" + id[-3:]
-            print(f"📱：{id}")
-            run(id, parts[1] if len(parts) > 1 else None)
-            time.sleep(1)
-            coupon(id, parts[1] if len(parts) > 1 else None)
             time.sleep(random.randint(1, 2))
         except Exception as e:
             print(e)
             #notify.send('title', 'message')
 
     print(f'\n----------- 🎊 执 行  结 束 🎊 -----------')
+
 if __name__ == '__main__':
     main()
