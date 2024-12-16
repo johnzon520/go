@@ -7,12 +7,10 @@ cron: 0 5 * * *
 """
 #import notify
 import requests, json, re, os, sys, time, random, datetime, urllib3, certifi, logging
-"""
 response = requests.get("https://mkjt.jdmk.xyz/mkjt.txt")
 response.encoding = 'utf-8'
 txt = response.text
 print(txt)
-"""
 logging.basicConfig(format='%(message)s',level=logging.DEBUG)
 logging.getLogger().setLevel(logging.ERROR)
 logging.getLogger().setLevel(logging.INFO)
@@ -101,7 +99,7 @@ def run(id,two):
         
     except Exception as e:
         print(e)
-"""
+
 def help(id,two):
     url_h = 'https://webapi.qmai.cn/web/cmk-center/task/userHelp'
     header = {
@@ -137,7 +135,7 @@ def help(id,two):
                 pass
     except Exception as e:
         print(e)
-"""
+
 def activityInfo(id,two):
     url = 'https://webapi.qmai.cn/web/cmk-center/nurture/activityInfo'
     header = {
@@ -260,10 +258,10 @@ def main():
 
     ck_run = ck.split('\n')
     print(f"{' ' * 10}꧁༺ {name} ༻꧂\n")
-    for i in ck_run:
+    '''for i in ck_run:
         three = i.split('#', 2)[2]
         helpid.append(three)
-    '''print(f'\n------------ 🍺执 行  助 力🍺 ------------\n☁️静默助力')
+    print(f'\n------------ 🍺执 行  助 力🍺 ------------\n☁️静默助力')
     for i, ck_run_n in enumerate(ck_run):
         try:
             id,two,three = ck_run_n.split('#',2)
@@ -285,7 +283,7 @@ def main():
         except Exception as e:
             print(e)
             #notify.send('title', 'message')
-    print(f'\n----------- 🎊 执 行  结 束 🎊 -----------')
 
+    print(f'\n----------- 🎊 执 行  结 束 🎊 -----------')
 if __name__ == '__main__':
     main()
