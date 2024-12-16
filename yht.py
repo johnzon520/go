@@ -286,9 +286,8 @@ def main():
         except Exception as e:
             print(e)
             #notify.send('title', 'message')
-"""
-
     print(f'\n----------- 🎊 执 行  结 束 🎊 -----------')
+"""
 
 if __name__ == '__main__':
     main()
