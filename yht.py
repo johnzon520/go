@@ -248,6 +248,7 @@ def coupon(id,two):
     except Exception as e:
         print(e)
 
+"""
 def main():
     global help
     if os.environ.get(environ):
@@ -285,7 +286,9 @@ def main():
         except Exception as e:
             print(e)
             #notify.send('title', 'message')
+"""
 
     print(f'\n----------- 🎊 执 行  结 束 🎊 -----------')
+
 if __name__ == '__main__':
     main()
