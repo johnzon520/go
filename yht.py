@@ -273,12 +273,21 @@ def main():
     for i, ck_run_n in enumerate(ck_run):
         print(f'\n----------- 🍺账号【{i + 1}/{len(ck_run)}】执行🍺 -----------')
         try:
+            '''
             id,two,three = ck_run_n.split('#',2)
             id = id[:3] + "***" + id[-3:]
             print(f"📱：{id}")
             run(id,two)
             time.sleep(1)
             coupon(id,two)
+            '''
+            parts = ck_run_n.split('#')
+            id = parts[0]
+            id = id[:3] + "***" + id[-3:]
+            print(f"📱：{id}")
+            run(id, parts[1] if len(parts) > 1 else None)
+            time.sleep(1)
+            coupon(id, parts[1] if len(parts) > 1 else None)
             time.sleep(random.randint(1, 2))
         except Exception as e:
             print(e)
