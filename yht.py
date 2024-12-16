@@ -1,4 +1,7 @@
 """
+微信小程序 益禾堂手机点单 抓
+ *  1.https://logger.qmai.cn/report.do 请求体中的uid 此为账号的助力码
+ *  2.任意请求头中的Qm-User-Token 此为账户的token
 name: 益禾堂
 Author: MK集团本部
 export yht="备注#token#inviteUserId"
