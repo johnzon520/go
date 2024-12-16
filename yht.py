@@ -7,7 +7,6 @@ cron: 0 5 * * *
 """
 #import notify
 import requests, json, re, os, sys, time, random, datetime, urllib3, certifi, logging
-response = requests.get("https://mkjt.jdmk.xyz/mkjt.txt")
 response.encoding = 'utf-8'
 txt = response.text
 print(txt)
