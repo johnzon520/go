@@ -101,7 +101,7 @@ def run(id,two):
         
     except Exception as e:
         print(e)
-
+"""
 def help(id,two):
     url_h = 'https://webapi.qmai.cn/web/cmk-center/task/userHelp'
     header = {
@@ -137,7 +137,7 @@ def help(id,two):
                 pass
     except Exception as e:
         print(e)
-
+"""
 def activityInfo(id,two):
     url = 'https://webapi.qmai.cn/web/cmk-center/nurture/activityInfo'
     header = {
@@ -248,7 +248,6 @@ def coupon(id,two):
     except Exception as e:
         print(e)
 
-"""
 def main():
     global help
     if os.environ.get(environ):
@@ -290,4 +289,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-"""
