@@ -1,4 +1,5 @@
 """
+抓包方法，进小程序，捉 https://jdbapi.socialark.net/api/user/getUserInfo 【Frontauthorization】
 name: 加多宝༒村奥
 Author: MK集团本部
 Date: 0000-00-00
