@@ -1,8 +1,9 @@
 """
+抓包方法，进小程序，注册登录，再进游戏抓包，捉 https://huodong1.lzlj.com/api/game/info 【Authorization】
 name: 泸州老窖
 Author: MK集团本部
 Date: 0000-00-00
-export lzljck=""
+export lzljck="备注#ck"
 cron: 0 5 * * *
 const $ = new Env("泸州老窖")
 """
@@ -27,7 +28,7 @@ def info():
         if response.ok:
             print("☁️签到：成功")
         else:
-            print("❌签到：失败_", response.text)
+            print("❌签到：失败")
     else:
         print("☁️签到：已签")
     time.sleep(1)
@@ -57,9 +58,9 @@ def info():
                     if "points" in response_data:
                         print(f"☁️游戏完成：{response_data['points']}积分")
                 else:
-                    print(f"❌游戏'{togame}'失败: {response.text}")
+                    print(f"❌游戏'{togame}'失败")
             else:
-                print(f"❌游戏'{togame}'失败: {response.text}")
+                print(f"❌游戏'{togame}'失败")
     print(f"☁️游戏任务：✓")
     log()
     if lotter_mj == 1:
