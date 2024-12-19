@@ -5,11 +5,13 @@
 name: 益禾堂
 Author: MK集团本部
 export yht="备注#token#inviteUserId"
-cron: 0 5 * * *
+cron: 25 11 * * *
 备注：ck不过期 只能浇水了助力不行
+const $ = new Env("益禾堂")
 """
 #import notify
-import requests, json, re, os, sys, time, random, datetime, urllib3, certifi, logging
+import requests, json, re, os, sys, time, random, datetime, urllib3, certifi, logging, io, contextlib
+from send_msg import push
 """
 response = requests.get("https://mkjt.jdmk.xyz/mkjt.txt")
 response.encoding = 'utf-8'
@@ -28,6 +30,12 @@ control_js = 1  # 0 → 储水模式，1 → 浇水模式
 control_sh = 0  # 0 → 手动点击最后一次浇水，1 → 自动浇水
 #---------------------主代码区块---------------------
 
+def capture_output(func, *args, **kwargs):
+    captured_output = io.StringIO()
+    with contextlib.redirect_stdout(captured_output):
+        func(*args, **kwargs)
+    return captured_output.getvalue()
+    
 def run(id,two):
     url_info = 'https://webapi.qmai.cn/web/cmk-center/nurture/activityInfo'
     url = 'https://webapi.qmai.cn/web/cmk-center/nurture/add/nutrient'
@@ -275,6 +283,7 @@ def main():
             time.sleep(random.randint(1, 2))
         except Exception as e:
             print(e)'''
+    total_output = ""
     for i, ck_run_n in enumerate(ck_run):
         print(f'\n----------- 🍺账号【{i + 1}/{len(ck_run)}】执行🍺 -----------')
         try:
@@ -282,6 +291,8 @@ def main():
             id = id[:3] + "***" + id[-3:]
             print(f"📱：{id}")
             run(id,two)
+            user_output = capture_output(run, id, two)
+            total_output += f"[账号 {i + 1}][{id}]\n{user_output}"
             time.sleep(1)
             coupon(id,two)
             time.sleep(random.randint(1, 2))
@@ -290,6 +301,7 @@ def main():
             #notify.send('title', 'message')
 
     print(f'\n----------- 🎊 执 行  结 束 🎊 -----------')
+    push(f"{name}", f"{total_output}")
 
 if __name__ == '__main__':
     main()
