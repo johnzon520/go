@@ -8,7 +8,9 @@ cron: 25 10 * * *
 const $ = new Env("加多宝村奥")
 """
 #import notify
-import requests, json, re, os, sys, time, random, datetime, execjs
+import requests, json, re, os, sys, time, random, datetime,execjs, io, contextlib
+from send_msg import push
+
 environ = "jdb"
 name = "加多宝༒奥运"
 session = requests.session()
@@ -16,6 +18,13 @@ session = requests.session()
 #---------------------抽奖 控制---------------------
 control_lucky = 1
 #---------------------主代码区块---------------------
+
+def capture_output(func, *args, **kwargs):
+    captured_output = io.StringIO()
+    with contextlib.redirect_stdout(captured_output):
+        func(*args, **kwargs)
+    return captured_output.getvalue()
+
 def game(two):
     header["FrontAuthorization"] = two
     url = 'https://jdbapi.socialark.net/api/game/redRainOk'
@@ -94,6 +103,7 @@ def main():
     ck_run = ck.split('\n')
     ck_run = [item for item in ck_run if item]
     print(f"{' ' * 10}꧁༺ {name} ༻꧂\n")
+    total_output = ""
     for i, ck_run_n in enumerate(ck_run):
         print(f'\n----------- 🍺账号【{i + 1}/{len(ck_run)}】执行🍺 -----------')
         try:
@@ -101,11 +111,14 @@ def main():
             #id = id[:3] + "*****" + id[-3:]
             print(f"📱：{id}")
             run(two)
+            user_output = capture_output(run, two)
+            total_output += f"[账号 {i + 1}][{id}]{user_output}"
             time.sleep(random.randint(1, 2))
         except Exception as e:
             print(e)
             #notify.send('title', 'message')
     print(f'\n----------- 🎊 执 行  结 束 🎊 -----------')
+    push(f"{name}", f"{total_output}")
 
 if __name__ == '__main__':
     header = {
