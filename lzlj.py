@@ -4,11 +4,12 @@ name: 泸州老窖
 Author: MK集团本部
 Date: 0000-00-00
 export lzljck="备注#ck"
-cron: 0 5 * * *
+cron: 11 9 * * *
 const $ = new Env("泸州老窖")
 """
 #import notify
-import requests, json, re, os, sys, time, random, datetime
+import requests, json, re, os, sys, time, random, datetime, io, contextlib
+from send_msg import push
 from threading import Thread, Semaphore
 environ = "lzljck"
 name = "泸州༒老窖"
@@ -18,6 +19,12 @@ sc = 0          # 在线时长并发
 lotter_nz = 0   # 浓珠抽奖
 lotter_mj = 0   # 秘籍抽奖
 #---------------------控制区块，lotter_nz浓珠，lotter_mj秘籍，1开启，0关闭---------------------
+
+def capture_output(func, *args, **kwargs):
+    captured_output = io.StringIO()
+    with contextlib.redirect_stdout(captured_output):
+        func(*args, **kwargs)
+    return captured_output.getvalue()
 
 def info():
     url_info = "https://huodong1.lzlj.com/api/game/info?is_weixin=true&refresh_official=0"
@@ -253,6 +260,7 @@ def main():
         for thread in threads:
             thread.join()
 
+    total_output = ""
     for i, ck_run_n in enumerate(ck_run):
         try:
             print(f'\n----------- 🍺账号【{i + 1}/{len(ck_run)}】执行🍺 -----------')
@@ -260,11 +268,14 @@ def main():
             headers['authorization'] = f"Bearer {ck}"
             print(f"📱：{id}")
             info()
+            user_output = capture_output(info)
+            total_output += f"[账号 {i + 1}][{id}]\n{user_output}"
             time.sleep(random.randint(1, 2))
         except Exception as e:
             print(e)
             #notify.send('title', 'message')
     print(f'\n----------- 🎊 执 行  结 束 🎊 -----------')
+    push(f"{name}", f"{total_output}")
 
 if __name__ == '__main__':
     main()
